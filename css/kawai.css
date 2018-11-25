@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../pic/biji-kopi.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.wadah-logo {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.logo {
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.menunya {
+  text-align: center;
+  list-style: none;
+}
+
+.menunya li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.menunya li a {
+  text-decoration: none;
+  color: white;
+}
+
+.isi-header {
+  transform: translateY(-25%);
+  top: 25%;
+  position: relative;
+  text-align: center;
+}
+.isi-header h2{
+  color: white;
+  margin-bottom: 20px;
+}
+.isi-header a{
+  text-decoration: none;
+  color: white;
+}
+
+
+h2 span {
+  color: yellow;
+}
+
+.button-container {
+  padding: 10px;
+}
+
+button {
+  padding: 20px;
+  color: white;
+  font-size: 1.1em;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+
+
+#gallery {
+  position: relative;
+}
+#gallery:active{
+  background-color: #4a4740;
+}
+
+
+#gallery:hover::before,
+#gallery:hover::after {
+  width: 100%
+}
+
+#gallery::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: width 0.3s;
+}
+
+#gallery::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: width 0.3s;
+}
+.boxgonol {
+  padding: 40px 0 ;
+}
+#about-bottom img {
+  margin: 20px auto;
+}
+.foto-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 68%;
+  height: auto;
+}
